@@ -9,7 +9,7 @@ public class Sketch extends PApplet {
 
 
     //clock variables
-    int clockX, clockY;
+    float clockX, clockY;
     float secondsCircle;
     float minutesCircle;
     float hoursCircle;
@@ -81,8 +81,8 @@ public class Sketch extends PApplet {
     hoursCircle = radius * (float)0.50;
     clock = radius * (float)1.8;
 
-    clockX = width/4;
-    clockY = height/4;
+    clockX = random(0,width);
+    clockY = random(0,height);
 
 
   }
