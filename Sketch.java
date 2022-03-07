@@ -21,10 +21,6 @@ public class Sketch extends PApplet {
     size(1000, 1000);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   
    public void setup() {
 
@@ -78,7 +74,7 @@ public class Sketch extends PApplet {
     fill(0,0,0);
     ellipse(outX + distance, outY, diametre/8, diametre/8);
 
-    
+    //clock size setup
     int radius = min(width,height) / 10;
     secondsCircle = radius * (float)0.72;
     minutesCircle = radius * (float)0.60;
